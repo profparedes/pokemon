@@ -2463,6 +2463,10 @@ picomatch@^2.2.3, picomatch@^2.3.0:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
+"pokemon-sprites@github:PokeAPI/sprites":
+  version "1.0.0"
+  resolved "https://codeload.github.com/PokeAPI/sprites/tar.gz/ca5a7886c10753144e6fae3b69d45a4d42a449b4"
+
 postcss-value-parser@^4.0.2:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"

@@ -1,5 +1,7 @@
 import { PokemonsQueryResultArrayType, PokemonType } from 'Types/pokemon';
 
+import Config from 'Config';
+
 const calcFemaleGenderRatePercent = (value: number): number => {
   let result = (value / 8) * 100;
   if (result > 100) result = 100;
@@ -34,8 +36,10 @@ export const normalizePokemonsQueryResults = (
     },
     types: item.types.data.map((t) => t.type.name),
     image:
-      JSON.parse(item?.images?.[0]?.sprites)?.other?.['official-artwork']
-        ?.front_default ?? null,
+      `${
+        JSON.parse(item?.images[0]?.sprites)?.other?.['official-artwork']
+          ?.front_default
+      }`.replace('/media', Config.services.sprites.baseURL) ?? null,
     description: item.specy?.descriptions?.[0]?.text ?? undefined,
     move: item.moves?.[0]?.move?.name ?? undefined,
     stats:

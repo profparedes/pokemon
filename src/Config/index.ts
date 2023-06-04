@@ -11,6 +11,7 @@ const Config = {
   },
   services: {
     pokeApi: { baseURL: import.meta.env.VITE_API_GRAPHQL_BASE_URL },
+    sprites: { baseURL: import.meta.env.VITE_API_SPRITES_BASE_URL ?? '' },
     tradingCardApi: { baseURL: import.meta.env.VITE_API_POKEMONTCG_BASE_URL },
   },
 };
